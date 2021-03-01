@@ -1,12 +1,16 @@
-## Build and run the private ethereum
+# Build and run the private ethereum #
 
 `docker-compose build`
 
 `docker-compose run -p 8545:8545 -p 30303:30303 blockchain`
 
-### Starts mining with 2 threads, RPC port is forwarded for HTTP communication (:8545)
+`exit` on stdin to quit shutdown the process gracefully
+
+Starts mining with 2 threads, RPC port is forwarded for HTTP communication (:8545)
+
 ---
-## Using web3js client for RPC connection
+
+## Using web3js client for RPC connection ##
 
 `npm install`
 

@@ -1,11 +1,10 @@
 FROM alpine:3.13.2
 
-RUN apk update && apk add geth
+RUN apk --update add geth
 
-COPY ./genesis.json ./blockchain/genesis.json
 COPY ./data ./blockchain/data
 
-WORKDIR ./blockchain
+WORKDIR /blockchain
 
 RUN echo 1234 > account_pwd
 
