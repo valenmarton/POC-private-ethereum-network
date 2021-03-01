@@ -1,0 +1,41 @@
+
+eth.accounts
+net.listening
+net.peerCount
+admin.peers
+admin.nodeInfo.encode
+geth --datadir ./datadir --networkid 1114
+geth --datadir ./myDataDir --networkid 1114 console 2>> Eth.log
+quit
+web3.personal
+accounts
+admin.nodeInfo
+same admin.nodeInfo
+admin.nodeInfo
+admin.peers
+admin.nodeInfo
+miner.start(1)
+ccc
+miner.start(1)
+miner.stop
+miner.stop()
+miner.start(1)
+eth.getBlock(1)
+eth.getBlock(0)
+miner.stop()
+eth.getBlock(0)
+mine.start(1)
+miner.start(1)
+miner.stop()
+eth.getBlock(3)
+eth.getBlock(5)
+eth.getBlock(8)
+miner.start(1)
+eth.getBlock(8)
+eth.getBlock(7)
+eth.getBlock(8)
+eth.getBlock(7)
+eth.getBlock(8)
+miner.stop()
+personal
+exut
