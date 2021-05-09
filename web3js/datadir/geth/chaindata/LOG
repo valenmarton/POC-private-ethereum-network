@@ -378,3 +378,12 @@
 21:53:40.123135 db@open done T·40.693646ms
 21:54:50.608492 db@close closing
 21:54:50.608615 db@close done T·121.966µs
+=============== May 10, 2021 (CEST) ===============
+00:36:19.130703 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:36:19.140358 version@stat F·[1 1] S·218KiB[57KiB 161KiB] Sc·[0.25 0.00]
+00:36:19.140394 db@open opening
+00:36:19.140520 journal@recovery F·1
+00:36:19.142880 journal@recovery recovering @73
+00:36:19.145680 version@stat F·[1 1] S·218KiB[57KiB 161KiB] Sc·[0.25 0.00]
+00:36:19.168811 db@janitor F·4 G·0
+00:36:19.168879 db@open done T·28.461405ms

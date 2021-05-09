@@ -4,13 +4,20 @@ pragma experimental ABIEncoderV2;
 
 contract Insurance {
     
-    string[] hashList;
+    address owner;
     
-    function addHash(string calldata _hash) external {
-        hashList.push(_hash);
+    event ReturnHash(string hash);
+    
+    constructor() {                  
+        owner = msg.sender;
+    }   
+    
+    modifier _ownerOnly() {
+      require(msg.sender == owner);
+      _;
     }
     
-    function getHashList() external view returns(string[] memory) {
-        return hashList;
+    function saveHash(string memory _hash) _ownerOnly public {
+        emit ReturnHash(_hash);
     }
 }
